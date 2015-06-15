@@ -1,0 +1,9 @@
+/bin
+/gen
+/src-gen
+/obj
+/assets
+src/com/dafeng/mymodibleassistant/TestAcvitiy.java
+*.project
+*.so
+project.properties
