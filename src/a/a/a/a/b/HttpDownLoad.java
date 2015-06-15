@@ -10,20 +10,6 @@ import java.net.URLConnection;
 
 public class HttpDownLoad {
 	public static void one(){
-		String urlMainF= "http://f1.w.hjfile.cn/doc/touch_m/biaori/";
-		String urlLessionF= "3-%d-%d";
-		String mp3NameF = "Lesson%d.mp3";
-		String saveDir = "C:/Users/Administrator/Desktop/temp/autio_process/two";
-		for (int i=0;i<24;i++){
-			String mp3Name = String.format(mp3NameF, i+1);
-			String url = urlMainF+String.format(urlLessionF, i/6*6+1,i/6*6+6)+"/"+mp3Name;
-			System.out.println(url);
-			String saveFile = saveDir + "/"+mp3Name;
-			if (!httpDownload(url,saveFile)){
-				System.out.println("saveFile:"+saveFile+"  failed!");
-				break;
-			}
-		}
 	}
 	public static boolean httpDownload(String httpUrl,String saveFile){  
 	       // ÏÂÔØÍøÂçÎÄ¼þ  
